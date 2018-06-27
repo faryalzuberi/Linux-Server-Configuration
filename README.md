@@ -1,10 +1,10 @@
 # Linux-Server-Configuration
 
-# # IP address
+## IP address
 The user grader can log in to the Ubuntu server at 13.58.221.240 on port 2200 via SSH.
-# # Web Application
+## Web Application
 The web application can be accessed at http://ec2-13-58-221-240.us-east-2.compute.amazonaws.com/ in any browser of choice.
-# # Configuration Changes
+## Configuration Changes
 The following configuration changes were made to the server
 1. Root Login was disabled in /etc/ssh/sshd_config
 2. created grader user with the following command
@@ -46,7 +46,7 @@ sudo apt-get upgrade
 ```
 
 9. Change read write permissions to /var/www/catalog/catalog.db to allow write queries.
-# # Packages Installed
+## Packages Installed
 - finger
 - apache2
 - python3
@@ -54,13 +54,15 @@ sudo apt-get upgrade
 - libapache2-mod-wsgi-py3
 - python3-flask
 - python3-pip
-- mysql-server
-- mysql-client
 - python3-sqlalchemy
 - python3-oauth2client
 - python3-httplib2
 - python3-urllib3
 - sqlite3
 python3.5-venv
-# # Resources used
-Stack Exchange and Ubuntu
+## Resources used
+The Udacity course on Configuring Linux Web Servers was used as the main reference in configuring the firewall settings, adding a new user and setting up ssh login with a private-public key pair. Other references used are as follows:
+- Setting up AWS EC2 instance https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html
+- blog posts on Deploying a Flask Application on ubuntu https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+https://devops.profitbricks.com/tutorials/deploy-a-flask-application-on-ubuntu-1404/
+- Flask Documentation on mod_wsgi http://flask.pocoo.org/docs/1.0/deploying/mod_wsgi/
