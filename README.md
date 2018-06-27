@@ -61,7 +61,8 @@ sudo apt-get upgrade
 - sqlite3
 python3.5-venv
 ## Resources used
-The Udacity course on Configuring Linux Web Servers was used as the main reference in configuring the firewall settings, adding a new user and setting up ssh login with a private-public key pair. Other references used are as follows:
+The Udacity course on [Configuring Linux Web Servers](https://classroom.udacity.com/courses/ud299-nd) was used as the main reference in configuring the firewall settings, adding a new user and setting up ssh login with a private-public key pair. 
+Other references used are as follows:
 - [Setting up AWS EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
 - blog posts on Deploying a Flask Application on ubuntu 
 -- [Blog 1](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
