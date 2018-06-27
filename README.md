@@ -66,4 +66,4 @@ The Udacity course on Configuring Linux Web Servers was used as the main referen
 - blog posts on Deploying a Flask Application on ubuntu 
 -- [Blog 1](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
 -- [Blog 2](https://devops.profitbricks.com/tutorials/deploy-a-flask-application-on-ubuntu-1404/)
-- [Flask Documentation on mod_wsgi] (http://flask.pocoo.org/docs/1.0/deploying/mod_wsgi/)
+- [Flask Documentation on mod_wsgi](http://flask.pocoo.org/docs/1.0/deploying/mod_wsgi/)
