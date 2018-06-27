@@ -62,7 +62,8 @@ sudo apt-get upgrade
 python3.5-venv
 ## Resources used
 The Udacity course on Configuring Linux Web Servers was used as the main reference in configuring the firewall settings, adding a new user and setting up ssh login with a private-public key pair. Other references used are as follows:
-- Setting up AWS EC2 instance https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html
-- blog posts on Deploying a Flask Application on ubuntu https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
-https://devops.profitbricks.com/tutorials/deploy-a-flask-application-on-ubuntu-1404/
-- Flask Documentation on mod_wsgi http://flask.pocoo.org/docs/1.0/deploying/mod_wsgi/
+- [Setting up AWS EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
+- blog posts on Deploying a Flask Application on ubuntu 
+-- [Blog 1](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
+-- [Blog 2](https://devops.profitbricks.com/tutorials/deploy-a-flask-application-on-ubuntu-1404/)
+- [Flask Documentation on mod_wsgi] (http://flask.pocoo.org/docs/1.0/deploying/mod_wsgi/)
