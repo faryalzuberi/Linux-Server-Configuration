@@ -1,7 +1,7 @@
 # Linux-Server-Configuration
 
 # # IP address
-The user grader can log in to the Ubuntu server at http://ec2-13-58-221-240.us-east-2.compute.amazonaws.com on port 2200 via SSH.
+The user grader can log in to the Ubuntu server at 13.58.221.240 on port 2200 via SSH.
 # # Web Application
 The web application can be accessed at http://ec2-13-58-221-240.us-east-2.compute.amazonaws.com/ in any browser of choice.
 # # Software Installed
