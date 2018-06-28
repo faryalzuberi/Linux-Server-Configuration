@@ -60,6 +60,39 @@ sudo apt-get upgrade
 - python3-urllib3
 - sqlite3
 python3.5-venv
+## Deploying the Web Application and Configuring the Apache Server
+After installing the apache2 package and libapache2-mod-wsgi-py3. The mod-wsgi was enabled using
+```
+sudo a2enmod wsgi
+```
+The web application was cloned using git at /var/www into 'catalog'. A catalog.wsgi was created at /var/www/catalog with the following content
+```
+#!/usr/bin/python
+import sys
+import logging
+logging.basicConfig(stream=sys.stderr)
+sys.path.insert(0,"/var/www/catalog/")
+
+from final_project import app as application
+application.secret_key = 'your_secret_key'
+```
+
+The apache web server was then configured by creating a .conf file at /etc/apache2/sites-available/catalog.conf with the following content:
+```
+<VirtualHost *>
+    ServerName ec2-13-58-221-240.us-east-2.compute.amazonaws.com
+    WSGIDaemonProcess catalog user=ubuntu group=ubuntu threads=5
+    WSGIScriptAlias / /var/www/catalog/catalog.wsgi
+    <Directory /var/www/catalog>
+        WSGIProcessGroup catalog
+        WSGIApplicationGroup %{GLOBAL}
+        Order deny,allow
+        Allow from all
+    </Directory>
+</VirtualHost>
+```
+
+
 ## Resources used
 The Udacity course on [Configuring Linux Web Servers](https://classroom.udacity.com/courses/ud299-nd) was used as the main reference in configuring the firewall settings, adding a new user and setting up ssh login with a private-public key pair. 
 Other references used are as follows:
